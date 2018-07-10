@@ -1,4 +1,11 @@
 $(function () {
+    //页面加载
+    $(".fakeloader").fakeLoader({
+        timeToHide:1200,
+        bgColor:"#fff",
+        imagePath:"../media/images/loading.gif"
+    });
+
     //头部banner淡入动画
     setTimeout(function () {
         $(".header-box h1").addClass("animated zoomIn");
@@ -33,11 +40,6 @@ $(function () {
         });
     });
 
-    //页面加载
-    $(".fakeloader").fakeLoader({
-        timeToHide:1200,
-        bgColor:"#fff",
-        imagePath:"../media/images/loading.gif"
-    });
+
 
 })
