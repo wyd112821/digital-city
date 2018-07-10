@@ -2,7 +2,7 @@ $(function () {
     //头部banner淡入动画
     setTimeout(function () {
         $(".header-box h1").addClass("animated zoomIn");
-    },600);
+    },1200);
 
     $(".nav ul li").hover(function () {
         $(this).find("a").addClass("animated swing");
@@ -10,6 +10,7 @@ $(function () {
         $(this).find("a").removeClass("animated swing");
     });
 
+    //导航热点链接
     var unit =  $('.org-unit');
     var company =  $('.sup-company');
     var unitLocation = unit.offset().top;
@@ -30,6 +31,13 @@ $(function () {
             easing: 'easeInOutQuart',
             duration: 2000
         });
+    });
+
+    //页面加载
+    $(".fakeloader").fakeLoader({
+        timeToHide:1200,
+        bgColor:"#fff",
+        imagePath:"../media/images/loading.gif"
     });
 
 })

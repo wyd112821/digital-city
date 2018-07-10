@@ -31,7 +31,7 @@ button,input,select,textarea{font-size:100%;font-family:tahoma;margin: 0;outline
 
 body{ background:#f3f5ff; overflow-x:hidden; min-width: 1200px;}
 /* ================ 全局function ============ */
-.fl{ float: left;}
+.float-l{ float: left;}
 .fr{ float: right;}
 .clear{ clear: both;}
 
