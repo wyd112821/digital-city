@@ -36,6 +36,23 @@ body{ background:#f3f5ff; overflow-x:hidden; min-width: 1200px;}
 .clear{ clear: both;}
 
 
+.fakeloader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+}
+.fakeloader div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
 
 .header-box{
     position: relative;
