@@ -10,6 +10,29 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../media/css/animate.min.css">
     <link rel="stylesheet" href="../media/css/style.css">
+
+    <!-- JS Files -->
+    <script type="text/javascript" src="../media/js/jquery.min.js"></script>
+    <script type="text/javascript">
+        var images = new Array()
+        function preload() {
+            for (i = 0; i < preload.arguments.length; i++) {
+                images[i] = new Image()
+                images[i].src = preload.arguments[i]
+            }
+        }
+        preload(
+            "https://wyd112821.github.io/digital-city/media/images/wrap_bg1.jpg",
+            "https://wyd112821.github.io/digital-city/media/images/wrap_bg2.jpg",
+            "https://wyd112821.github.io/digital-city/media/images/wrap_bg3.jpg",
+            "https://wyd112821.github.io/digital-city/media/images/wrap_scsz_bg1.jpg",
+            "https://wyd112821.github.io/digital-city/media/images/wrap_scsz_bg2.jpg",
+            "https://wyd112821.github.io/digital-city/media/images/wrap_dsst_bg.jpg",
+            "https://wyd112821.github.io/digital-city/media/images/wrap_jjsz_bg.jpg",
+            "https://wyd112821.github.io/digital-city/media/images/wrap_jczx_bg.jpg"
+        )
+    </script>
+
 </head>
 <body>
     <!-- Loading -->
@@ -130,7 +153,6 @@
 
 
     <!-- JS Files -->
-    <script type="text/javascript" src="../media/js/jquery.min.js"></script>
     <script type="text/javascript" src="../media/js/jquery.easing.min.js"></script>
     <script type="text/javascript" src="../media/ckplayer/ckplayer.js"></script>
     <script type="text/javascript" src="../media/js/fakeLoader.min.js"></script>
